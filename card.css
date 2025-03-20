@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+
+}
+body {
+    background: rgb(255, 255, 255);
+    background-image: radial-gradient(circle,black 2px,transparent 1px);
+    background-size: 10px 10px;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+nav .title{
+    rotate: -2deg;
+    border-bottom-right-radius: 25px;
+    width: 40%;
+    border: 3px solid black;
+    background-color: rgb(40, 132, 253);
+    color: white;
+}
+
+nav .tambah{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    border: 3px solid black;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 59);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+nav .tambah:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    border: 3px solid black;
+    font-weight: bolder;
+    background-color: rgb(59, 255, 59);
+    transform: scale(1.5);
+}
+nav .tambah a{
+    text-decoration: none;
+    color: black;
+}
+
+nav .menu{
+    border-bottom-left-radius: 25px;
+    display: flex;
+    justify-content: end;
+    width: 40%;
+    border: 3px solid black;
+    background-color: rgb(255, 67, 67);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.todo {
+    background: linear-gradient(to right,rgba(255, 0, 0, 0.589),rgba(0, 0, 255, 0.466));
+    border: 5px solid black;
+    padding: 15px 25px;
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    rotate: 1.2deg;
+}
+.card {
+    font-weight: bolder;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    flex: 0 calc(31.5% - 10px);
+    background-color: rgb(226, 230, 199);
+    box-shadow: 5px 5px 2px black;
+}
+.card:hover{
+    rotate: 3deg;
+}
+ .card .action{
+    display: flex;
+    justify-content: space-between;
+    margin:10px 0;
+ }
+.card .action a{
+    padding: 5px 5px;
+    border: 3px solid black;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.card .action a:hover{
+    transform: scale(1.2);
+    rotate: 15deg;
+}
+.card .action .edit{
+    background-color: rgb(92, 168, 255);
+    color: black;
+}
+.card .action .delete{
+    background-color: rgb(252, 53, 53);
+    color: rgb(255, 255, 255);
+}
+
+.tool {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 0 10px;
+}
+
+.tool .filter{
+    rotate: 2deg;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(63, 169, 255);
+    border: 3px solid black;
+    box-shadow: 3px 3px 2px black;
+    border-radius: 5px;
+}
+.tool .search {
+    rotate: -3deg;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(63, 169, 255);
+    border: 3px solid black;
+    box-shadow: 3px 3px 2px black;
+    border-radius: 5px;
+}
+
+.tool .search {
+    background-color: rgb(255, 67, 67);
+}
+
+.filter .category,.filter .status,.filter .bookmark,input,button{
+    padding: 5px 5px;
+    border: 3px solid black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+input{
+    rotate: 10deg;
+    transition: all 0.2s ease;
+}
+select:hover,button:hover{
+    rotate: -9deg;
+}
+button{
+    background-color: rgb(69, 149, 253);
+}
+.filter .category{
+    background-color: rgb(247, 82, 82);
+    color: rgb(255, 255, 255);
+}
+.filter .status{
+    background-color: rgb(184, 255, 70);
+}
+.filter .bookmark{
+    background-color: yellow;
+}
